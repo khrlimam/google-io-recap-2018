@@ -1,12 +1,349 @@
-<!DOCTYPE html>
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Google I/O Lombok 2018</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Google I/O Recap Extended Lombok adalah acara perpanjangan dari acara Google I/O yang diselenggarakn tanggal 8-10 mei 2019 di Mountain View">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Google I/O Recap Extended Lombok</title>
+
+  <!-- Page styles -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Product Sans:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+  </style>
 </head>
+
 <body>
-  
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
+      <div class="mdl-layout__header-row">
+        <span class="android-title mdl-layout-title">
+          <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="148.52444" height="32.74939" viewBox="0 0 148.52444 32.74939"
+            version="1.1" id="svg8" sodipodi:docname="io.svg" inkscape:version="0.92.3 (unknown)">
+            <metadata id="metadata14">
+              <rdf:RDF>
+                <cc:Work rdf:about="">
+                  <dc:format>image/svg+xml</dc:format>
+                  <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                  <dc:title></dc:title>
+                </cc:Work>
+              </rdf:RDF>
+            </metadata>
+            <defs id="defs12" />
+            <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10"
+              inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="1366" inkscape:window-height="715" id="namedview10"
+              showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:zoom="2.8695652"
+              inkscape:cx="57.91508" inkscape:cy="1.9966424" inkscape:window-x="0" inkscape:window-y="30" inkscape:window-maximized="1"
+              inkscape:current-layer="svg8" />
+            <g id="nav-io-phase-01" transform="translate(-62,-17.000022)" style="fill:none;fill-rule:evenodd">
+              <g id="ic-io-logo-indigo" transform="translate(62,17)" style="fill:#536dfe">
+                <g id="io-logo">
+                  <polygon id="Fill-1" points="11.61019,27.613166 11.61019,4.4145934 0,4.4145934 0,27.613166 " />
+                  <polygon id="Fill-2" points="12.972209,32.344358 14.778152,32.749412 21.967775,0.40507569 20.161832,2.1579867e-05 " />
+                  <path d="m 33.253355,3.452973 c -6.886771,0 -12.469774,5.6092549 -12.469774,12.528408 0,6.919584 5.583003,12.528623 12.469774,12.528623 6.887201,0 12.46999,-5.609039 12.46999,-12.528623 0,-6.9191531 -5.582789,-12.528408 -12.46999,-12.528408"
+                    id="Fill-3" inkscape:connector-curvature="0" />
+                </g>
+              </g>
+            </g>
+            <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.66666603px;line-height:125%;font-family:'SF Mono';-inkscape-font-specification:'SF Mono';letter-spacing:0px;word-spacing:0px;fill:#999999;fill-opacity:1;stroke:#999999;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+              x="54.21212" y="25.708029" id="text844">
+              <tspan sodipodi:role="line" id="tspan842" x="54.21212" y="25.708029" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Product Sans';-inkscape-font-specification:'Product Sans';fill:#767777;fill-opacity:1;stroke:#767777;stroke-opacity:1">Lombok</tspan>
+            </text>
+          </svg>
+
+
+        </span>
+        <!-- Add spacer, to align navigation to the right in desktop -->
+        <div class="android-header-spacer mdl-layout-spacer"></div>
+        <!-- Navigation -->
+        <div class="android-navigation-container">
+          <nav class="android-navigation mdl-navigation">
+            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#tentang">Tentang</a>
+            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#jadwal">Jadwal</a>
+            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#codelabs">Codelabs</a>
+            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Sponsor</a>
+          </nav>
+        </div>
+        <span class="android-mobile-title mdl-layout-title">
+          <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="148.52444" height="32.74939" viewBox="0 0 148.52444 32.74939"
+            version="1.1" id="svg8" sodipodi:docname="io.svg" inkscape:version="0.92.3 (unknown)">
+            <metadata id="metadata14">
+              <rdf:RDF>
+                <cc:Work rdf:about="">
+                  <dc:format>image/svg+xml</dc:format>
+                  <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                  <dc:title></dc:title>
+                </cc:Work>
+              </rdf:RDF>
+            </metadata>
+            <defs id="defs12" />
+            <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10"
+              inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="1366" inkscape:window-height="715" id="namedview10"
+              showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:zoom="2.8695652"
+              inkscape:cx="57.91508" inkscape:cy="1.9966424" inkscape:window-x="0" inkscape:window-y="30" inkscape:window-maximized="1"
+              inkscape:current-layer="svg8" />
+            <g id="nav-io-phase-01" transform="translate(-62,-17.000022)" style="fill:none;fill-rule:evenodd">
+              <g id="ic-io-logo-indigo" transform="translate(62,17)" style="fill:#536dfe">
+                <g id="io-logo">
+                  <polygon id="Fill-1" points="11.61019,27.613166 11.61019,4.4145934 0,4.4145934 0,27.613166 " />
+                  <polygon id="Fill-2" points="12.972209,32.344358 14.778152,32.749412 21.967775,0.40507569 20.161832,2.1579867e-05 " />
+                  <path d="m 33.253355,3.452973 c -6.886771,0 -12.469774,5.6092549 -12.469774,12.528408 0,6.919584 5.583003,12.528623 12.469774,12.528623 6.887201,0 12.46999,-5.609039 12.46999,-12.528623 0,-6.9191531 -5.582789,-12.528408 -12.46999,-12.528408"
+                    id="Fill-3" inkscape:connector-curvature="0" />
+                </g>
+              </g>
+            </g>
+            <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.66666603px;line-height:125%;font-family:'SF Mono';-inkscape-font-specification:'SF Mono';letter-spacing:0px;word-spacing:0px;fill:#999999;fill-opacity:1;stroke:#999999;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+              x="52.21212" y="25.708029" id="text844">
+              <tspan sodipodi:role="line" id="tspan842" x="52.21212" y="25.708029" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Product Sans';-inkscape-font-specification:'Product Sans';fill:#767777;fill-opacity:1;stroke:#767777;stroke-opacity:1">Lombok</tspan>
+            </text>
+          </svg>
+        </span>
+      </div>
+    </div>
+
+    <div class="android-drawer mdl-layout__drawer">
+      
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="#tentang">Tentang</a>
+        <a class="mdl-navigation__link" href="#jadwal">Jadwal</a>
+        <a class="mdl-navigation__link" href="#codelabs">Codelabs</a>
+        <a class="mdl-navigation__link" href="">Sponsor</a>
+      </nav>
+    </div>
+
+    <div class="android-content mdl-layout__content">
+      <a name="top"></a>
+      <div class="android-be-together-section mdl-typography--text-center">
+        <div class="logo-font android-slogan">
+          Google I/O 2018
+        </div>
+        <div class="img-header-io">
+          <img src="https://storage.googleapis.com/io-2018.appspot.com/v1/hashtag.gif" width="30%" />
+        </div>
+        <div class="logo-font android-sub-slogan">Extended Lombok Recap</div>
+      </div>
+
+      <div class="android-wear-section" id="tentang">
+        <div class="android-wear-band bg-yellow" style="width: 90%">
+          <div class="android-wear-band-text">
+            <div class="mdl-typography--display-2 mdl-typography--font-thin" style="color: black;">Tentang</div>
+            <p class="mdl-typography--headline mdl-typography--font-thin" style="color: black;">
+              Google I/O Extended Lombok adalah acara perpanjangan dari acara Google I/O yang diselenggarakn Google pada 8-10 mei 2018
+              di Shoreline Amphitheatre, Mountain View. Acara ini adalah festival developer tahunan yang ditujukan untuk
+              mengumumkan pembaruan-pembaruan yang dilakukan Google selama setahun terakhir terhadap teknologi yang dimiliki
+              ataupun juga untuk mengumumkan teknolgi baru yang dimiliki.
+            </p>
+            <p class="mdl-typography--headline mdl-typography--font-thin" style="color: black;">
+              Adapaun Google I/O Extended Lombok ini diadakan untuk membagi informasi dan pengetahun kepada seluruh developer dan penggiat
+              teknologi informasi yang ada di Lombok ataupun Indonesia secara umum tentang teknolgi Google. Untuk mencapai
+              itu acara ini dilengkapi
+              <i>codelabs</i> agar peserta dapat langsung mendapatkan pengalaman mengembangkan produk dengan memanfaatkan teknologi
+              dari Google.
+            </p>
+            <p class="mdl-typography--headline mdl-typography--font-thin" style="color: black;">
+              Acara ini tidak dipungut biaya sepeserpun, acara ini bisa terlaksana atas dukungan dari sponsor.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="android-wear-section" id="jadwal">
+        <div class="android-wear-band bg-pink" style="width: 90%">
+          <div class="android-wear-band-text">
+            <div class="mdl-typography--display-2 mdl-typography--font-thin">Jadwal</div>
+            <p class="mdl-typography--headline mdl-typography--font-thin">
+              Acara ini akan dilaksanakan pada tanggal 11 Augustus 2018
+            </p>
+            <p class="mdl-typography--headline mdl-typography--font-thin">
+              <a href="#" class="mmdl-typography--font-regular mdl-typography--text-uppercase android-alt-link" style="color: #fff">Lihat susunan acara</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="android-more-section" id="codelabs">
+        <div class="android-section-title mdl-typography--display-1-color-contrast">Codelabs</div>
+        <div class="android-card-container mdl-grid">
+          <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+            <div class="mdl-card__media">
+              <img src="./images/android-core.png">
+            </div>
+            <div class="mdl-card__title">
+              <h4 class="mdl-card__title-text">Android Core</h4>
+            </div>
+            <div class="mdl-card__supporting-text">
+              <span class="mdl-typography--font-light mdl-typography--subhead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta tenetur minima dolore illo necessitatibus ut,
+                vel natus eos optio facilis voluptatibus dolor voluptas tempora corrupti, laudantium dolorum vero non quaerat?</span>
+            </div>
+            <div class="mdl-card__actions">
+              
+            </div>
+          </div>
+
+          <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+            <div class="mdl-card__media">
+              <img src="./images/google_material-design.jpg">
+            </div>
+            <div class="mdl-card__title">
+              <h4 class="mdl-card__title-text">Android Design</h4>
+            </div>
+            <div class="mdl-card__supporting-text">
+              <span class="mdl-typography--font-light mdl-typography--subhead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt omnis, blanditiis, explicabo, fugit saepe
+                exercitationem in voluptatum ducimus molestiae optio odio quod neque amet eveniet nihil iusto nulla provident
+                sit?
+              </span>
+            </div>
+            <div class="mdl-card__actions">
+              
+            </div>
+          </div>
+
+          <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+            <div class="mdl-card__media">
+              <img src="./images/firebase-cover.png">
+            </div>
+            <div class="mdl-card__title">
+              <h4 class="mdl-card__title-text">Firebase</h4>
+            </div>
+            <div class="mdl-card__supporting-text">
+              <span class="mdl-typography--font-light mdl-typography--subhead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis dolore obcaecati corrupti iste? Consequuntur
+                similique, in aliquam totam debitis numquam dolor iusto placeat aliquid beatae dolores blanditiis, impedit,
+                deserunt et.</span>
+            </div>
+            <div class="mdl-card__actions">
+              
+            </div>
+          </div>
+
+          <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+            <div class="mdl-card__media">
+              <img src="./images/firebase.png">
+            </div>
+            <div class="mdl-card__title">
+              <h4 class="mdl-card__title-text">Android Machine Learning</h4>
+            </div>
+            <div class="mdl-card__supporting-text">
+              <span class="mdl-typography--font-light mdl-typography--subhead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolor labore doloremque officia pariatur
+                quasi voluptatum porro sit! Tempore at laudantium placeat explicabo temporibus odit dignissimos natus architecto
+                perspiciatis corporis.</span>
+            </div>
+            <div class="mdl-card__actions">
+              
+            </div>
+          </div>
+
+          <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+            <div class="mdl-card__media">
+              <img src="./images/machine-learning.jpg">
+            </div>
+            <div class="mdl-card__title">
+              <h4 class="mdl-card__title-text">Machine Learning</h4>
+            </div>
+            <div class="mdl-card__supporting-text">
+              <span class="mdl-typography--font-light mdl-typography--subhead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima officiis iste neque aliquid pariatur ullam
+                labore repellat repudiandae sint ducimus, numquam quo vitae incidunt nam recusandae odio, omnis possimus
+                accusamus.
+              </span>
+            </div>
+            <div class="mdl-card__actions">
+              
+            </div>
+          </div>
+
+          <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+            <div class="mdl-card__media">
+              <img src="./images/bussiness.png">
+            </div>
+            <div class="mdl-card__title">
+              <h4 class="mdl-card__title-text">Bussiness</h4>
+            </div>
+            <div class="mdl-card__supporting-text">
+              <span class="mdl-typography--font-light mdl-typography--subhead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, odio nisi recusandae ut, quis a omnis quisquam
+                animi repellat nam sed voluptates et vitae consequatur maiores? Veritatis dolores quae facilis?</span>
+            </div>
+            <div class="mdl-card__actions">
+             
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="android-wear-section">
+        <div class="android-wear-band bg-blue">
+          <div class="android-wear-band-text">
+            <div class="mdl-typography--display-2 mdl-typography--font-thin">Tertarik dengan acara ini?</div>
+            <p class="mdl-typography--headline mdl-typography--font-thin">
+              Agar bisa mengikuti acara ini dan mengikuti <i>codelabs</i> anda harus terdaftar. Pendaftaran bisa dilakukan melalui formulir pada link dibawah:
+              <br>
+              <a href="#" class="mmdl-typography--font-regular mdl-typography--text-uppercase android-alt-link" style="color: #fff">Form pendaftaran Google I/O Extended Lombok</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <footer class="android-footer mdl-mega-footer">
+        <div class="mdl-mega-footer--top-section">
+          <div class="mdl-mega-footer--left-section">
+            <a target="_blank" href="https://web.facebook.com/google.io.recap.extended.lombok/">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Facebook_logo_36x36.svg/1024px-Facebook_logo_36x36.svg.png"
+                style="width: 36px; height:36px;" alt="">
+            </a>
+          </div>
+          <div class="mdl-mega-footer--right-section">
+            <a class="mdl-typography--font-light" href="#top">
+              Ke atas
+              <i class="material-icons">expand_less</i>
+            </a>
+          </div>
+        </div>
+
+        <div class="mdl-mega-footer--middle-section">
+          <p class="mdl-typography--font-light">Google I/O Extended Lombok Recap 2018</p>
+        </div>
+
+        <div class="mdl-mega-footer--bottom-section">
+          <a class="android-link mdl-typography--font-light" href="">Kode Etik</a>
+          <a class="android-link mdl-typography--font-light" href="">Kebijakan</a>
+        </div>
+
+      </footer>
+    </div>
+  </div>
+  <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 </body>
+
 </html>
