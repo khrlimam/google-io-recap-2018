@@ -331,6 +331,18 @@ a img {
   background-color: #37474F;
 }
 
+.bg-violet {
+  background-color: #6A1B9A;
+}
+
+.bg-indigo {
+  background-color: #9FA8DA;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
 .android-wear-band-text {
   max-width: 800px;
   margin-left: 25%;
